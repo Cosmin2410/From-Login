@@ -11,7 +11,7 @@
     <div class="contact-form">
       <h1>Contact Form</h1>
       <form>
-        <h2 class="title-name">Name:<span>*</span></h2>
+        <h2 class="title-form">Name: <span>*</span></h2>
 
         <div class="first-last-name">
           <div class="first-name">
@@ -25,45 +25,49 @@
           </div>
         </div>
 
-        <h2 class="title-email">Email:<span>*</span></h2>
+        <h2 class="title-form">Email: <span>*</span></h2>
         <input type="text" name="email" />
         <p class="email-form">Enter a valid Email.</p>
 
-        <h2 class="title-phone">Phone:<span>*</span></h2>
+        <h2 class="title-form">Phone: <span>*</span></h2>
         <input type="number" name="phone" min="0" />
 
-        <h2 class="title-message">Message:</h2>
-        <input type="text" name="message" />
+        <h2 class="title-form">Message:</h2>
+        <textarea class="message" name="message" cols="30" rows="5"></textarea>
 
         <input class="submit" type="submit" value="Submit" />
       </form>
     </div>
 
     <div class="log-in">
-      <!-- <img src="images/user.png"/> -->
+      <img class="main-image" src="images/user.png" />
       <h2>Login</h2>
+
       <div class="signIn-signOut">
         <input class="name" type="text" name="name" placeholder="Name" />
+        <img class="name-img" src="images/user2.png" />
         <input class="email" type="text" name="email" placeholder="Email" />
-        <p class="email-error">Enter a valid Email.</p>
-        <!-- <img src="images/mail.png" /> -->
+        <p class="email-error txt">Enter a valid Email.</p>
+        <img class="mail-img" src="images/mail.png" />
         <input
           class="password"
           type="text"
           name="password"
           placeholder="Password"
         />
-        <p class="password-error">Passwords don't match.</p>
+        <img class="pass-img" src="images/padlock.png" />
+        <p class="password-error txt">Passwords don't match.</p>
+
         <input
-          class="password"
+          class="password-confirm"
           type="text"
           name="password"
           placeholder="Confirm Password"
         />
-        <p class="password-error">Passwords don't match.</p>
-
-        <!-- <img src="images/mail.png" /> -->
+        <img class="pass-error-img" src="images/padlock.png" />
+        <p class="password-error txt">Passwords don't match.</p>
       </div>
+
       <div class="submit-btns">
         <button class="login-btn">Log In</button>
         <p class="forgot-pass">
@@ -74,7 +78,9 @@
 
       <div class="login-with">
         <h2>OR</h2>
-        <button>Login with Google</button>
+        <button><img src="images/google.png" /> Login with Google</button>
+        <button><img src="images/facebook.png" /> Login with Facebook</button>
+        <button><img src="images/github.png" /> Login with GitHub</button>
       </div>
     </div>
 
