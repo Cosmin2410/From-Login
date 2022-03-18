@@ -64,6 +64,7 @@ const uppercase = document.querySelector('.password-error-uppercase');
 const validPass = document.querySelector('.password-valid');
 const signUpTxt = document.querySelector('.sign-in-text');
 const nameErr = document.querySelector('.name-error');
+const succesSignUp = document.querySelector('.sign-up-succes');
 
 const nameInput = document.querySelector('.name');
 const emailSignIn = document.querySelector('.email');
@@ -85,6 +86,10 @@ function logIn() {
   nameInput.style.display = 'none';
   passwordConfirm.style.display = 'none';
   nameErr.style.display = 'none';
+  succesSignUp.style.display = 'none';
+  minLength.style.display = 'none';
+  uppercase.style.display = 'none';
+  passErrMatch.style.display = 'none';
 
   if (emailSignIn.value === '' || !emailSignIn.value.includes('@')) {
     emailErr.style.display = 'block';
@@ -164,10 +169,12 @@ function signUp() {
     emailSignIn.value !== '' &&
     emailSignIn.value.includes('@') &&
     password.value === passwordConfirm.value &&
-    password.value.length > 8 &&
-    passwordConfirm.value.length > 8 &&
+    password.value.length >= 8 &&
+    passwordConfirm.value.length >= 8 &&
     checkUppercase > 0
   ) {
-    console.log('a');
+    succesSignUp.style.display = 'block';
+  } else {
+    succesSignUp.style.display = 'none';
   }
 }
