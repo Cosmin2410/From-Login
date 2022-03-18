@@ -15,27 +15,31 @@
 
         <div class="first-last-name">
           <div class="first-name">
-            <input type="text" name="fname" />
+            <input class="fname" type="text" name="fname" />
             <label for="fname">First Name</label>
+            <p class="form-fname-error">Enter a valid first name.</p>
           </div>
 
           <div class="last-name">
-            <input type="text" name="lname" />
+            <input class="lname" type="text" name="lname" />
             <label for="lname">Last Name</label>
+            <p class="form-lname-error">Enter a valid last name.</p>
           </div>
         </div>
 
         <h2 class="title-form">Email: <span>*</span></h2>
-        <input type="text" name="email" />
-        <p class="email-form">Enter a valid Email.</p>
+        <input class="email-input" type="text" name="email" />
+        <p class="form-email-error">Enter a valid email.</p>
 
         <h2 class="title-form">Phone: <span>*</span></h2>
-        <input type="number" name="phone" min="0" />
+        <input class="phone" type="number" name="phone" min="0" />
+        <p class="form-phone-error">Enter a valid phone number.</p>
 
         <h2 class="title-form">Message:</h2>
-        <textarea class="message" name="message" cols="30" rows="5"></textarea>
+        <textarea class="message" name="message" cols="30" rows="7"></textarea>
+        <p class="form-succes">Form sent successfully.</p>
 
-        <input class="submit" type="submit" value="Submit" />
+        <button class="submit">Submit</button>
       </form>
     </div>
 
@@ -45,27 +49,34 @@
 
       <div class="signIn-signOut">
         <input class="name" type="text" name="name" placeholder="Name" />
-        <img class="name-img" src="images/user2.png" />
+        <p class="name-error txt">Enter a valid Name.</p>
+
         <input class="email" type="text" name="email" placeholder="Email" />
         <p class="email-error txt">Enter a valid Email.</p>
-        <img class="mail-img" src="images/mail.png" />
         <input
           class="password"
-          type="text"
+          type="password"
           name="password"
           placeholder="Password"
         />
-        <img class="pass-img" src="images/padlock.png" />
-        <p class="password-error txt">Passwords don't match.</p>
 
         <input
           class="password-confirm"
-          type="text"
+          type="password"
           name="password"
           placeholder="Confirm Password"
         />
-        <img class="pass-error-img" src="images/padlock.png" />
-        <p class="password-error txt">Passwords don't match.</p>
+
+        <p class="password-valid txt">Enter a valid password</p>
+        <p class="password-error-match txt">Passwords don't match.</p>
+        <p class="password-error-length txt">Min. 8 characters.</p>
+        <p class="password-error-uppercase txt">Use one uppercase letter.</p>
+
+        <p class="sign-in-text">
+          The account is not registred, please try to sign up.
+        </p>
+
+        <p class="sign-up-succes">The account has been created.</p>
       </div>
 
       <div class="submit-btns">

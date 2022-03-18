@@ -12,14 +12,6 @@ body {
   height: 100vh;
 }
 
-.log-in {
-  /* display: none; */
-}
-
-.contact-form {
-  display: none;
-}
-
 /* Contact form */
 input {
   width: 16rem;
@@ -45,7 +37,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 2rem;
 }
 
-.email-form,
+.email-form-error,
 span {
   color: red;
   margin-top: 0.3rem;
@@ -97,7 +89,22 @@ span {
   justify-content: center;
 }
 
-/* Log in / Sign in  */
+.form-email-error,
+.form-phone-error,
+.form-fname-error,
+.form-lname-error {
+  display: none;
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.form-succes {
+  color: rgb(8, 241, 8);
+  margin-top: 1rem;
+  display: none;
+}
+
+/* Log in / Sign un  */
 
 .log-in {
   margin: auto;
@@ -115,7 +122,6 @@ span {
 .signIn-signOut {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .signIn-signOut img {
@@ -135,7 +141,7 @@ span {
 
 .pass-img {
   right: 3px;
-  top: 10.1rem;
+  top: 10rem;
 }
 
 .pass-error-img {
@@ -153,6 +159,14 @@ span {
 }
 
 .txt {
+  color: red;
+  /* display: none; */
+}
+
+.sign-in-text {
+  width: 15rem;
+  text-align: center;
+  margin-top: 2rem;
   color: red;
 }
 
@@ -206,4 +220,39 @@ span {
   padding: 0.3rem;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.contact-form {
+  display: none;
+}
+
+.log-in {
+  /* display: none; */
+}
+
+.email-error,
+.password-error-match,
+.sign-in-text,
+.password-error-length,
+.password-error-uppercase,
+.password-valid,
+.name-error {
+  display: none;
+}
+
+.password-valid {
+  display: none;
+}
+
+.sign-up-succes {
+  color: rgb(8, 241, 8);
+  display: none;
+}
+
+.name {
+  display: none;
+}
+
+.password-confirm {
+  display: none;
 }
