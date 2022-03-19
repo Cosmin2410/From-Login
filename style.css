@@ -222,14 +222,6 @@ span {
   cursor: pointer;
 }
 
-.contact-form {
-  display: none;
-}
-
-.log-in {
-  /* display: none; */
-}
-
 .email-error,
 .password-error-match,
 .sign-in-text,
@@ -256,3 +248,17 @@ span {
 .password-confirm {
   display: none;
 }
+
+/* Switch button to form*/
+
+.switch-button-login {
+  margin-bottom: 2 rem;
+}
+
+.switch-button-login button {
+  width: 7rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+/* Switch button to login*/

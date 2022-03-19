@@ -178,3 +178,27 @@ function signUp() {
     succesSignUp.style.display = 'none';
   }
 }
+
+// Switch Form - Login
+const form = document.querySelector('.contact-form');
+const logInBody = document.querySelector('.log-in');
+
+logInBody.style.display = 'none';
+
+const formBtn = document
+  .querySelector('.switch-button-login')
+  .addEventListener('click', hideForm);
+
+const loginBtn = document
+  .querySelector('.switch-button')
+  .addEventListener('click', hideLogin);
+
+function hideForm() {
+  form.style.display = 'none';
+  logInBody.style.display = 'block';
+}
+
+function hideLogin() {
+  logInBody.style.display = 'none';
+  form.style.display = 'block';
+}
